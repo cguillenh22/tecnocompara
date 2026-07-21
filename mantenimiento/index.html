@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Cuidado y mantenimiento"
+description: "Artículos de cuidado y mantenimiento en TecnoCompara."
+permalink: /mantenimiento/
+---
+<div class="container">
+  <section class="hero">
+    <span class="eyebrow">Categoría</span>
+    <h1>Cuidado y mantenimiento</h1>
+  </section>
+
+  {% assign posts = site.articulos | where_exp: "a", "a.categories contains 'mantenimiento'" %}
+  <div class="card-grid">
+    {% for post in posts %}
+    <div class="card">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <div class="meta">
+        {% if post.content_type == 'volatil' %}Actualizable{% else %}Guía{% endif %}
+        · {{ post.read_time | default: 5 }} min
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% if posts.size == 0 %}
+  <p>Todavía no hay artículos publicados en esta categoría.</p>
+  {% endif %}
+</div>

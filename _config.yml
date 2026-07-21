@@ -1,0 +1,50 @@
+title: "TecnoCompara"
+tagline: "Comparativas claras de celulares, TVs y refrigeradoras en Perú"
+description: >-
+  Guías y comparativas independientes para elegir celulares, televisores
+  y refrigeradoras en Perú, sin jerga y sin relleno.
+url: "https://tech.modoahorro.pe"
+lang: es-PE
+
+# --- Awin / afiliados ---
+# Reemplaza cuando tengas el advertiser de Samsung aprobado en Awin.
+awin_disclosure: true
+
+# --- Medición (cuenta NUEVA, no reutilizar la de ModoAhorro) ---
+gtm_container_id: "GTM-XXXXXXX"   # <-- reemplazar con el ID real
+ga4_measurement_id: "G-XXXXXXXXXX" # <-- reemplazar con el ID real (referencia; el envío real va vía GTM)
+
+collections:
+  articulos:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "articulos"
+    values:
+      layout: "articulo"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+permalink: /:title/
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - NOTES.md
+  - README.md
+  - node_modules
+  - vendor
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+{% include head.html %}
+</head>
+<body>
+{% include gtm-body.html %}
+{% include header.html %}
+
+<div class="container">
+  <nav class="breadcrumbs" aria-label="breadcrumbs">
+    <a href="{{ '/' | relative_url }}">Inicio</a>
+    {% if page.categories.first %}
+      <span class="sep">/</span>
+      <a href="{{ '/' | append: page.categories.first | append: '/' | relative_url }}">
+        {{ site.data.categories[page.categories.first] | default: page.categories.first }}
+      </a>
+    {% endif %}
+    <span class="sep">/</span>
+    <span>{{ page.title }}</span>
+  </nav>
+
+  <header class="article-header">
+    <h1>{{ page.title }}</h1>
+    <div class="meta-row">
+      {% if page.read_time %}<span>{{ page.read_time }} min de lectura</span>{% endif %}
+      {% if page.date %}<span>Publicado {{ page.date | date: "%-d %b %Y" }}</span>{% endif %}
+      {% if page.date_modified %}<span>Actualizado {{ page.date_modified | date: "%-d %b %Y" }}</span>{% endif %}
+      {% if page.content_type %}
+        <span class="tag{% if page.content_type == 'volatil' %} tag--volatil{% endif %}">
+          {% if page.content_type == 'volatil' %}Actualizable{% else %}Guía{% endif %}
+        </span>
+      {% endif %}
+    </div>
+  </header>
+
+  <article class="article-body">
+    {{ content }}
+
+    <p class="disclosure">
+      Este artículo puede contener enlaces de afiliado. Si compras a través de
+      ellos, TecnoCompara puede recibir una comisión sin costo adicional para ti.
+      Más detalles en <a href="{{ '/sobre-mi/' | relative_url }}">Sobre mí</a>.
+    </p>
+  </article>
+
+  {% assign related = site.articulos | where_exp: "a", "a.url != page.url" %}
+  {% if page.categories.first %}
+    {% assign related = related | where_exp: "a", "a.categories contains page.categories.first" %}
+  {% endif %}
+  {% assign related = related | sample: 3 %}
+  {% if related.size > 0 %}
+  <section class="related">
+    <h2>Contenido relacionado</h2>
+    <div class="card-grid">
+      {% for post in related %}
+      <div class="card">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <div class="meta">{{ site.data.categories[post.categories.first] | default: post.categories.first }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</div>
+
+{% include footer.html %}
+</body>
+</html>

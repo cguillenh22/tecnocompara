@@ -1,0 +1,39 @@
+---
+layout: default
+title: "TecnoCompara — Comparativas de electrónica en Perú"
+description: "Guías y comparativas independientes de celulares, TVs y refrigeradoras en Perú, sin jerga y sin relleno."
+---
+<div class="container">
+  <section class="hero">
+    <span class="eyebrow">Comparativas independientes</span>
+    <h1>Elige tu próximo celular, TV o refrigeradora sin perder una tarde comparando specs.</h1>
+    <p class="lede">
+      Guías claras y comparativas actualizadas para comprar electrónica en Perú:
+      qué mirar realmente, qué ignorar, y qué opciones tienen sentido según tu
+      presupuesto y tu uso.
+    </p>
+  </section>
+
+  {% for cat in site.data.categories %}
+    {% assign cat_key = cat[0] %}
+    {% assign cat_name = cat[1] %}
+    {% assign posts = site.articulos | where_exp: "a", "a.categories contains cat_key" %}
+    {% if posts.size > 0 %}
+    <section>
+      <h2>{{ cat_name }}</h2>
+      <div class="card-grid">
+        {% for post in posts limit:6 %}
+        <div class="card">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <div class="meta">
+            {% if post.content_type == 'volatil' %}Actualizable{% else %}Guía{% endif %}
+            · {{ post.read_time | default: 5 }} min
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <p><a href="{{ '/' | append: cat_key | append: '/' | relative_url }}">Ver todo en {{ cat_name | downcase }} →</a></p>
+    </section>
+    {% endif %}
+  {% endfor %}
+</div>
