@@ -20,73 +20,101 @@
     <span>{{ page.title }}</span>
   </nav>
 
-  <header class="article-header">
-    <h1>{{ page.title }}</h1>
-    <div class="meta-row">
-      {% if page.read_time %}<span>{{ page.read_time }} min de lectura</span>{% endif %}
-      {% if page.date %}<span>Publicado {{ page.date | date: "%-d %b %Y" }}</span>{% endif %}
-      {% if page.date_modified %}<span>Actualizado {{ page.date_modified | date: "%-d %b %Y" }}</span>{% endif %}
-      {% if page.content_type %}
-        <span class="tag{% if page.content_type == 'volatil' %} tag--volatil{% endif %}">
-          {% if page.content_type == 'volatil' %}Actualizable{% else %}Guía{% endif %}
-        </span>
-      {% endif %}
-    </div>
-  </header>
-
-  {% assign featured_image = page.image | default: nil %}
-  {% unless featured_image %}
-    {% assign cat_filename = site.data.category_images[page.categories.first] | default: nil %}
-    {% if cat_filename %}
-      {% assign featured_image = "/assets/img/categorias/" | append: cat_filename %}
-    {% else %}
-      {% assign featured_image = "/assets/img/categorias/" | append: page.categories.first | append: ".svg" %}
-    {% endif %}
-  {% endunless %}
-  <img class="article-featured-img" src="{{ featured_image | relative_url }}" alt="{{ page.title }}" loading="lazy">
-
-  {% include share-buttons.html %}
-
-  <article class="article-body">
-    {{ content }}
-
-    {% if page.faq %}
-    <section class="faq-block">
-      <h2>Preguntas frecuentes</h2>
-      {% for item in page.faq %}
-      <div class="faq-item">
-        <h3>{{ item.q }}</h3>
-        <p>{{ item.a }}</p>
-      </div>
-      {% endfor %}
-    </section>
-    {% endif %}
-
-    <p class="disclosure">
-      Este artículo puede contener enlaces de afiliado. Si compras a través de
-      ellos, TecnoCompara puede recibir una comisión sin costo adicional para ti.
-      Más detalles en <a href="{{ '/sobre-nosotros/' | relative_url }}">Sobre Nosotros</a>.
-    </p>
-  </article>
-
   {% assign related = site.articulos | where_exp: "a", "a.url != page.url" %}
   {% if page.categories.first %}
     {% assign related = related | where_exp: "a", "a.categories contains page.categories.first" %}
   {% endif %}
-  {% assign related = related | sample: 3 %}
-  {% if related.size > 0 %}
-  <section class="related">
-    <h2>Contenido relacionado</h2>
-    <div class="card-grid">
-      {% for post in related %}
-      <div class="card">
-        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <div class="meta">{{ site.data.categories[post.categories.first] | default: post.categories.first }}</div>
-      </div>
-      {% endfor %}
+  {% assign related = related | sample: 5 %}
+
+  <div class="article-layout">
+    <div class="article-main">
+      <header class="article-header">
+        <h1>{{ page.title }}</h1>
+        <div class="meta-row">
+          {% if page.read_time %}<span>{{ page.read_time }} min de lectura</span>{% endif %}
+          {% if page.date %}<span>Publicado {{ page.date | date: "%-d %b %Y" }}</span>{% endif %}
+          {% if page.date_modified %}<span>Actualizado {{ page.date_modified | date: "%-d %b %Y" }}</span>{% endif %}
+          {% if page.content_type %}
+            <span class="tag{% if page.content_type == 'volatil' %} tag--volatil{% endif %}">
+              {% if page.content_type == 'volatil' %}Actualizable{% else %}Guía{% endif %}
+            </span>
+          {% endif %}
+        </div>
+      </header>
+
+      {% assign featured_image = page.image | default: nil %}
+      {% unless featured_image %}
+        {% assign cat_filename = site.data.category_images[page.categories.first] | default: nil %}
+        {% if cat_filename %}
+          {% assign featured_image = "/assets/img/categorias/" | append: cat_filename %}
+        {% else %}
+          {% assign featured_image = "/assets/img/categorias/" | append: page.categories.first | append: ".svg" %}
+        {% endif %}
+      {% endunless %}
+      <img class="article-featured-img" src="{{ featured_image | relative_url }}" alt="{{ page.title }}" loading="lazy">
+
+      {% include share-buttons.html %}
+
+      <article class="article-body">
+        {{ content }}
+
+        {% if page.faq %}
+        <section class="faq-block">
+          <h2>Preguntas frecuentes</h2>
+          {% for item in page.faq %}
+          <div class="faq-item">
+            <h3>{{ item.q }}</h3>
+            <p>{{ item.a }}</p>
+          </div>
+          {% endfor %}
+        </section>
+        {% endif %}
+
+        <p class="disclosure">
+          Este artículo puede contener enlaces de afiliado. Si compras a través de
+          ellos, TecnoCompara puede recibir una comisión sin costo adicional para ti.
+          Más detalles en <a href="{{ '/sobre-nosotros/' | relative_url }}">Sobre Nosotros</a>.
+        </p>
+      </article>
+
+      {% if related.size > 0 %}
+      <section class="related related--mobile">
+        <h2>Contenido relacionado</h2>
+        <div class="card-grid">
+          {% for post in related limit: 3 %}
+          <div class="card">
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <div class="meta">{{ site.data.categories[post.categories.first] | default: post.categories.first }}</div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
     </div>
-  </section>
-  {% endif %}
+
+    {% if related.size > 0 %}
+    <aside class="article-sidebar">
+      <div class="sidebar-sticky">
+        <h2>Artículos relacionados</h2>
+        <ul class="sidebar-related-list">
+          {% for post in related %}
+          <li>
+            <a href="{{ post.url | relative_url }}">
+              <span class="sidebar-related-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M7 3h7l5 5v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/>
+                  <path d="M14 3v5h5"/>
+                </svg>
+              </span>
+              {{ post.title }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </aside>
+    {% endif %}
+  </div>
 </div>
 
 {% include footer.html %}

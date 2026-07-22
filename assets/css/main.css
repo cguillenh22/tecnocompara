@@ -291,6 +291,93 @@ p { margin: 0 0 1.1em; }
   color: var(--color-ink-soft);
 }
 
+/* -------- Layout de artículo con sidebar -------- */
+.article-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding-top: 28px;
+}
+@media (min-width: 900px) {
+  .article-layout {
+    grid-template-columns: 1fr 280px;
+    align-items: start;
+  }
+}
+
+.article-sidebar { display: none; }
+@media (min-width: 900px) {
+  .article-sidebar { display: block; }
+}
+
+.sidebar-sticky {
+  position: sticky;
+  top: 90px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+.sidebar-sticky h2 {
+  font-size: 1rem;
+  margin: 0 0 12px;
+}
+.sidebar-related-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar-related-list li {
+  border-top: 1px solid var(--color-line);
+}
+.sidebar-related-list li:first-child { border-top: none; }
+.sidebar-related-list a {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: var(--color-ink);
+}
+.sidebar-related-list a:hover { color: var(--color-accent-ink); text-decoration: none; }
+.sidebar-related-icon {
+  flex-shrink: 0;
+  color: var(--color-accent-ink);
+  margin-top: 2px;
+}
+
+/* En móvil, la sección "related" completa (con cards) reemplaza al sidebar */
+.related--mobile { display: block; }
+@media (min-width: 900px) {
+  .related--mobile { display: none; }
+}
+
+/* -------- Caja de nota / callout -------- */
+.nota-callout {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: var(--color-surface);
+  border: 1px solid var(--color-line-strong);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin: 22px 0;
+}
+.nota-callout__icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent-ink);
+  margin-top: 2px;
+}
+.nota-callout p {
+  margin: 0;
+  color: var(--color-ink);
+}
+.nota-callout strong { color: var(--color-accent-ink); }
+
 /* -------- Preguntas frecuentes -------- */
 .faq-block {
   border-top: 1px solid var(--color-line);
