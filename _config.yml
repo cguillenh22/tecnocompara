@@ -17,7 +17,7 @@ ga4_measurement_id: "G-XXXXXXXXXX" # <-- reemplazar con el ID real (referencia; 
 collections:
   articulos:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:path/
 
 defaults:
   - scope:

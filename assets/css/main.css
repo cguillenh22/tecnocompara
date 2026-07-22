@@ -238,6 +238,28 @@ p { margin: 0 0 1.1em; }
   color: var(--color-ink);
 }
 
+/* -------- Preguntas frecuentes -------- */
+.faq-block {
+  border-top: 1px solid var(--color-line);
+  padding-top: 24px;
+  margin-top: 36px;
+}
+.faq-block h2 { margin-top: 0; }
+.faq-item {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+.faq-item:last-child { border-bottom: none; }
+.faq-item h3 {
+  font-size: 1rem;
+  margin: 0 0 6px;
+  color: var(--color-ink);
+}
+.faq-item p {
+  color: var(--color-ink-soft);
+  margin: 0;
+}
+
 /* -------- Contenido relacionado -------- */
 .related {
   border-top: 1px solid var(--color-line);

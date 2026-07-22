@@ -1,0 +1,52 @@
+---
+layout: default
+title: "Página no encontrada"
+description: "Esta página no existe, pero tenemos comparativas y guías que sí te van a servir."
+permalink: /404.html
+---
+<div class="container">
+  <section class="hero" style="text-align:center; padding-top:64px;">
+    <span class="eyebrow">Error 404</span>
+    <h1>Esta página no existe... pero seguro encuentras algo mejor aquí abajo.</h1>
+    <p class="lede" style="margin:0 auto;">
+      El enlace que seguiste puede estar roto o el contenido se movió. Mientras
+      lo revisamos, aquí tienes las categorías y comparativas más buscadas.
+    </p>
+  </section>
+
+  <section>
+    <h2>Explora por categoría</h2>
+    <div class="card-grid">
+      {% for cat in site.data.categories %}
+        {% assign cat_key = cat[0] %}
+        {% assign cat_name = cat[1] %}
+        {% assign count = site.articulos | where_exp: "a", "a.categories contains cat_key" | size %}
+        {% if count > 0 %}
+        <div class="card">
+          <h3><a href="{{ '/' | append: cat_key | append: '/' | relative_url }}">{{ cat_name }}</a></h3>
+          <div class="meta">{{ count }} artículo{% if count != 1 %}s{% endif %}</div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  {% assign destacados = site.articulos | where_exp: "a", "a.categories contains 'comparativas'" | sample: 3 %}
+  {% if destacados.size > 0 %}
+  <section>
+    <h2>Comparativas populares</h2>
+    <div class="card-grid">
+      {% for post in destacados %}
+      <div class="card">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <div class="meta">Comparativa</div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section style="text-align:center; padding: 32px 0 60px;">
+    <a class="cta-afiliado" href="{{ '/' | relative_url }}">Ir al inicio →</a>
+  </section>
+</div>

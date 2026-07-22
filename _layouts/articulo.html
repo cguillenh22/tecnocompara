@@ -37,6 +37,18 @@
   <article class="article-body">
     {{ content }}
 
+    {% if page.faq %}
+    <section class="faq-block">
+      <h2>Preguntas frecuentes</h2>
+      {% for item in page.faq %}
+      <div class="faq-item">
+        <h3>{{ item.q }}</h3>
+        <p>{{ item.a }}</p>
+      </div>
+      {% endfor %}
+    </section>
+    {% endif %}
+
     <p class="disclosure">
       Este artículo puede contener enlaces de afiliado. Si compras a través de
       ellos, TecnoCompara puede recibir una comisión sin costo adicional para ti.
