@@ -1,0 +1,12 @@
+<div class="share-buttons">
+  <span class="share-label">Compartir:</span>
+  <a href="https://api.whatsapp.com/send?text={{ page.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}"
+     target="_blank" rel="noopener" class="share-btn share-btn--whatsapp">WhatsApp</a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}"
+     target="_blank" rel="noopener" class="share-btn share-btn--facebook">Facebook</a>
+  <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url | url_encode }}"
+     target="_blank" rel="noopener" class="share-btn share-btn--x">X</a>
+  <button type="button" class="share-btn share-btn--copy" onclick="navigator.clipboard.writeText('{{ page.url | absolute_url }}'); this.textContent='¡Copiado!'; setTimeout(() => this.textContent='Copiar enlace', 2000);">
+    Copiar enlace
+  </button>
+</div>

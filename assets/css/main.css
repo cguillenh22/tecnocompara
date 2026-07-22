@@ -238,6 +238,58 @@ p { margin: 0 0 1.1em; }
   color: var(--color-ink);
 }
 
+.article-featured-img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin: 16px 0;
+  background: var(--color-ink);
+}
+
+/* -------- Botones de compartir -------- */
+.share-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 14px 0;
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  margin: 10px 0 20px;
+}
+.share-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink-soft);
+}
+.share-btn {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--color-line-strong);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  cursor: pointer;
+  text-decoration: none;
+}
+.share-btn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent-ink);
+  text-decoration: none;
+}
+
+/* -------- Últimas actualizaciones -------- */
+.update-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--color-ink-soft);
+}
+
 /* -------- Preguntas frecuentes -------- */
 .faq-block {
   border-top: 1px solid var(--color-line);
@@ -289,6 +341,52 @@ p { margin: 0 0 1.1em; }
   padding-top: 10px;
   margin-top: 30px;
 }
+
+/* -------- Newsletter -------- */
+.newsletter-box {
+  background: var(--color-ink);
+  color: #fff;
+  padding: 32px 20px;
+  text-align: center;
+}
+.newsletter-box h3 {
+  font-family: var(--font-display);
+  color: #fff;
+  margin: 0 0 8px;
+  font-size: 1.3rem;
+}
+.newsletter-box p {
+  color: #C9C6BE;
+  max-width: 480px;
+  margin: 0 auto 18px;
+}
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  max-width: 420px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.newsletter-form input[type="email"] {
+  flex: 1 1 240px;
+  padding: 10px 14px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+.newsletter-form button {
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  cursor: pointer;
+}
+.newsletter-form button:hover { background: var(--color-accent-ink); }
 
 /* -------- Footer -------- */
 .site-footer {

@@ -34,6 +34,14 @@
     </div>
   </header>
 
+  {% assign featured_image = page.image | default: nil %}
+  {% unless featured_image %}
+    {% assign featured_image = "/assets/img/categorias/" | append: page.categories.first | append: ".svg" %}
+  {% endunless %}
+  <img class="article-featured-img" src="{{ featured_image | relative_url }}" alt="{{ page.title }}" loading="lazy">
+
+  {% include share-buttons.html %}
+
   <article class="article-body">
     {{ content }}
 
