@@ -36,7 +36,12 @@
 
   {% assign featured_image = page.image | default: nil %}
   {% unless featured_image %}
-    {% assign featured_image = "/assets/img/categorias/" | append: page.categories.first | append: ".svg" %}
+    {% assign cat_filename = site.data.category_images[page.categories.first] | default: nil %}
+    {% if cat_filename %}
+      {% assign featured_image = "/assets/img/categorias/" | append: cat_filename %}
+    {% else %}
+      {% assign featured_image = "/assets/img/categorias/" | append: page.categories.first | append: ".svg" %}
+    {% endif %}
   {% endunless %}
   <img class="article-featured-img" src="{{ featured_image | relative_url }}" alt="{{ page.title }}" loading="lazy">
 

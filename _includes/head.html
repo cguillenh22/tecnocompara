@@ -17,7 +17,12 @@
 {% if page.layout == 'articulo' %}
   {% assign og_image = page.image | default: nil %}
   {% unless og_image %}
-    {% assign og_image = "/assets/img/categorias/" | append: page.categories.first | append: ".svg" %}
+    {% assign og_cat_filename = site.data.category_images[page.categories.first] | default: nil %}
+    {% if og_cat_filename %}
+      {% assign og_image = "/assets/img/categorias/" | append: og_cat_filename %}
+    {% else %}
+      {% assign og_image = "/assets/img/categorias/" | append: page.categories.first | append: ".svg" %}
+    {% endif %}
   {% endunless %}
   <meta property="og:image" content="{{ og_image | absolute_url }}">
 {% endif %}
