@@ -11,8 +11,8 @@ lang: es-PE
 awin_disclosure: true
 
 # --- Medición (cuenta NUEVA, no reutilizar la de ModoAhorro) ---
-gtm_container_id: "GTM-XXXXXXX"   # <-- reemplazar con el ID real
-ga4_measurement_id: "G-XXXXXXXXXX" # <-- reemplazar con el ID real (referencia; el envío real va vía GTM)
+gtm_container_id: "GTM-KFL8K7NL"
+ga4_measurement_id: "G-BN1Y2QSG0W"
 
 collections:
   articulos:
