@@ -2,7 +2,7 @@
 title: "Batería hinchada en el celular: qué hacer"
 seo_title: "Batería hinchada en el celular: qué hacer | TecnoCompara"
 description: "Qué significa que la batería de tu celular esté hinchada, por qué pasa y qué hacer al respecto de forma segura."
-categories: [celulares, mantenimiento]
+categories: [mantenimiento, celulares]
 content_type: "evergreen"
 read_time: 4
 date: 2026-07-21

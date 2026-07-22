@@ -2,7 +2,7 @@
 title: "Cómo cuidar la batería de tu celular para que dure más"
 seo_title: "Cómo cuidar la batería de tu celular | TecnoCompara"
 description: "Hábitos simples para cuidar la batería de tu celular y que mantenga buena capacidad por más tiempo."
-categories: [celulares, mantenimiento]
+categories: [mantenimiento, celulares]
 content_type: "evergreen"
 read_time: 4
 date: 2026-07-21

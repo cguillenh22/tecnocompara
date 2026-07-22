@@ -2,7 +2,7 @@
 title: "Cómo liberar espacio en tu celular sin borrar nada"
 seo_title: "Cómo liberar espacio en tu celular sin borrar nada | TecnoCompara"
 description: "Guía práctica para liberar espacio de almacenamiento en tu celular sin tener que eliminar fotos, apps ni conversaciones."
-categories: [celulares, mantenimiento]
+categories: [mantenimiento, celulares]
 content_type: "evergreen"
 read_time: 5
 date: 2026-07-21

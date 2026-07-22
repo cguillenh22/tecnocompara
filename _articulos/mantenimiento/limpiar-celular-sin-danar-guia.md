@@ -2,7 +2,7 @@
 title: "Cómo limpiar tu celular sin dañarlo"
 seo_title: "Cómo limpiar tu celular sin dañarlo | TecnoCompara"
 description: "Guía práctica para limpiar la pantalla y el cuerpo de tu celular sin dañar los componentes ni afectar la resistencia al agua."
-categories: [celulares, mantenimiento]
+categories: [mantenimiento, celulares]
 content_type: "evergreen"
 read_time: 4
 date: 2026-07-21
