@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Sobre mí"
-description: "Quién hace TecnoCompara y cómo se financia el sitio."
-permalink: /sobre-mi/
+title: "Sobre Nosotros"
+description: "Quiénes hacemos TecnoCompara y cómo se financia el sitio."
+permalink: /sobre-nosotros/
 ---
 <div class="container article-body" style="max-width:720px; padding-top:32px;">
 
-# Sobre TecnoCompara
+# Sobre Nosotros
 
 TecnoCompara es un sitio independiente de comparativas de electrónica en Perú.
 Nació para resolver un problema simple: elegir un celular, una TV o una
@@ -32,7 +32,7 @@ mejor comisión.
 
 ## Contacto
 
-¿Encontraste un error o quieres sugerir una comparativa? Escríbenos por el
-formulario de contacto del sitio (próximamente) o a través de nuestras redes.
+¿Encontraste un error o quieres sugerir una comparativa? Escríbenos por
+nuestro [formulario de contacto](/contacto/).
 
 </div>

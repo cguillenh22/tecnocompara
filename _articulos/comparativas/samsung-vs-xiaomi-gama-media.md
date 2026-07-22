@@ -3,6 +3,7 @@ title: "Samsung vs. Xiaomi en gama media: cuál conviene en Perú"
 seo_title: "Samsung vs Xiaomi gama media Perú [actualizar mes-año] | TecnoCompara"
 description: "Comparativa honesta entre Samsung y Xiaomi en gama media: cámara, batería, actualizaciones y a quién le conviene cada uno."
 categories: [comparativas, celulares]
+image: "/assets/img/articulos/comparativas/samsung-vs-xiaomi-gama-media.svg"
 content_type: "volatil"
 read_time: 8
 date: 2026-07-21

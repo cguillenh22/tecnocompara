@@ -3,6 +3,7 @@ title: "Samsung vs. Hisense: Smart TV de entrada, diferencias reales"
 seo_title: "Samsung vs Hisense Smart TV gama de entrada Perú | TecnoCompara"
 description: "Comparativa entre Samsung y Hisense en Smart TVs de gama de entrada: qué esperar de cada marca en el rango más económico."
 categories: [comparativas, teles]
+image: "/assets/img/articulos/comparativas/samsung-vs-hisense-televisores.svg"
 content_type: "volatil"
 read_time: 6
 date: 2026-07-21

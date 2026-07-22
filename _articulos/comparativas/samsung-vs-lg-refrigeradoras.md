@@ -3,6 +3,7 @@ title: "Samsung vs. LG en refrigeradoras No Frost: cuál dura más"
 seo_title: "Samsung vs LG refrigeradoras No Frost Perú | TecnoCompara"
 description: "Comparativa entre Samsung y LG en refrigeradoras No Frost: tecnología inverter, capacidad y durabilidad real."
 categories: [comparativas, refrigeradoras]
+image: "/assets/img/articulos/comparativas/samsung-vs-lg-refrigeradoras.svg"
 content_type: "volatil"
 read_time: 8
 date: 2026-07-21

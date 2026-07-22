@@ -3,6 +3,7 @@ title: "Samsung vs. Indurama: refrigeradoras para departamentos pequeños"
 seo_title: "Samsung vs Indurama refrigeradoras departamentos Perú | TecnoCompara"
 description: "Comparativa entre Samsung e Indurama en refrigeradoras compactas: qué considerar si vives en un departamento pequeño en Perú."
 categories: [comparativas, refrigeradoras]
+image: "/assets/img/articulos/comparativas/samsung-vs-indurama-refrigeradoras.svg"
 content_type: "volatil"
 read_time: 7
 date: 2026-07-21

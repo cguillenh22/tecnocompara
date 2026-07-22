@@ -3,6 +3,7 @@ title: "Samsung vs. TCL: TVs de 43 a 50 pulgadas, ¿vale la pena la diferencia d
 seo_title: "Samsung vs TCL TVs 43-50 pulgadas Perú | TecnoCompara"
 description: "Comparativa entre Samsung y TCL en TVs de 43 a 50 pulgadas: qué justifica la diferencia de precio y cuándo conviene pagar más."
 categories: [comparativas, teles]
+image: "/assets/img/articulos/comparativas/samsung-vs-tcl-televisores.svg"
 content_type: "volatil"
 read_time: 7
 date: 2026-07-21

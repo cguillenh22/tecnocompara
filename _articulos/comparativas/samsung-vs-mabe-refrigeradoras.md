@@ -3,6 +3,7 @@ title: "Samsung vs. Mabe: relación precio-capacidad en refrigeradoras"
 seo_title: "Samsung vs Mabe refrigeradoras Perú [actualizar mes-año] | TecnoCompara"
 description: "Comparativa entre Samsung y Mabe en refrigeradoras: cuál da más litros de capacidad por sol invertido en Perú."
 categories: [comparativas, refrigeradoras]
+image: "/assets/img/articulos/comparativas/samsung-vs-mabe-refrigeradoras.svg"
 content_type: "volatil"
 read_time: 7
 date: 2026-07-21

@@ -3,6 +3,7 @@ title: "Samsung Galaxy vs. iPhone: cuál elegir en gama alta"
 seo_title: "Samsung vs Apple gama alta Perú [actualizar mes-año] | TecnoCompara"
 description: "Comparativa entre Samsung Galaxy y iPhone en gama alta: ecosistema, personalización, cámara y precio en Perú."
 categories: [comparativas, celulares]
+image: "/assets/img/articulos/comparativas/samsung-vs-apple-gama-alta.svg"
 content_type: "volatil"
 read_time: 9
 date: 2026-07-21

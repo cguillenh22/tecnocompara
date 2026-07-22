@@ -3,6 +3,7 @@ title: "Samsung vs. Motorola en gama baja: cuál rinde más por tu dinero"
 seo_title: "Samsung vs Motorola gama baja Perú [actualizar mes-año] | TecnoCompara"
 description: "Comparativa entre Samsung y Motorola en gama de entrada: rendimiento, batería y durabilidad para un primer celular o uso básico."
 categories: [comparativas, celulares]
+image: "/assets/img/articulos/comparativas/samsung-vs-motorola-gama-baja.svg"
 content_type: "volatil"
 read_time: 7
 date: 2026-07-21

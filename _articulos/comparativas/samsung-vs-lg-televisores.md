@@ -3,6 +3,7 @@ title: "Samsung vs. LG en televisores: QLED vs. OLED explicado simple"
 seo_title: "Samsung vs LG TVs Perú [actualizar mes-año] | TecnoCompara"
 description: "Comparativa entre Samsung QLED y LG OLED: diferencias reales de imagen, durabilidad del panel y a quién le conviene cada tecnología."
 categories: [comparativas, teles]
+image: "/assets/img/articulos/comparativas/samsung-vs-lg-televisores.svg"
 content_type: "volatil"
 read_time: 8
 date: 2026-07-21

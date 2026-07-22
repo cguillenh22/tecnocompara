@@ -3,6 +3,7 @@ title: "Samsung vs. Xiaomi: cuál tiene mejor cámara en gama media"
 seo_title: "Samsung vs Xiaomi cámara gama media | TecnoCompara"
 description: "Comparativa enfocada en cámara entre Samsung y Xiaomi en gama media: sensor, procesamiento y video."
 categories: [comparativas, celulares]
+image: "/assets/img/articulos/comparativas/samsung-vs-xiaomi-camara.svg"
 content_type: "volatil"
 read_time: 7
 date: 2026-07-21
