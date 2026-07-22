@@ -67,13 +67,3 @@ chip usa el modelo, no solo cuánta memoria tiene.
 <a class="cta-afiliado" href="#" rel="sponsored nofollow noopener">
   Ver celulares recomendados →
 </a>
-
-## Preguntas frecuentes
-
-**¿Cuánta RAM necesito realmente en un celular?**
-Para uso básico (redes sociales, WhatsApp, cámara) 6 GB es suficiente. Para
-multitarea pesada o juegos exigentes, apunta a 8 GB o más.
-
-**¿Los megapixeles de la cámara son lo más importante?**
-No. El tamaño del sensor, la apertura y el procesamiento de imagen influyen
-más en la calidad final que la cifra de megapixeles.
