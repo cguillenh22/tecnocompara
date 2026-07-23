@@ -93,6 +93,4 @@ principalmente en exteriores con buena luz.
   Ver modelos Samsung con mejor cámara en gama media →
 </a>
 
-*Nota de mantenimiento: esta comparativa usa tendencias generales de marca.
-Verificar con el modelo específico y muestras de cámara actualizadas antes
-de publicar.*
+<!-- Nota de mantenimiento: esta comparativa usa tendencias generales de marca. Verificar con el modelo específico y muestras de cámara actualizadas antes de publicar. -->

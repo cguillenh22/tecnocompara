@@ -83,4 +83,4 @@ considerar 75 pulgadas en su lugar.
   Ver TVs de 65 pulgadas disponibles →
 </a>
 
-*Nota de mantenimiento: revisar modelos y precios vigentes cada 2-3 meses.*
+<!-- Nota de mantenimiento: revisar modelos y precios vigentes cada 2-3 meses. -->

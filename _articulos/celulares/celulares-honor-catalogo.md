@@ -80,4 +80,4 @@ y red de servicio técnico.
   Ver modelos Honor disponibles →
 </a>
 
-*Nota de mantenimiento: revisar catálogo vigente y precios cada 2-3 meses.*
+<!-- Nota de mantenimiento: revisar catálogo vigente y precios cada 2-3 meses. -->

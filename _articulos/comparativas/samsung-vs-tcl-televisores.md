@@ -94,5 +94,4 @@ uso es principalmente casual.
   Ver modelos Samsung 43-50 pulgadas →
 </a>
 
-*Nota de mantenimiento: completar con modelos, tamaños y precios vigentes
-antes de publicar. Revisar cada 2-3 meses.*
+<!-- Nota de mantenimiento: completar con modelos, tamaños y precios vigentes antes de publicar. Revisar cada 2-3 meses. -->

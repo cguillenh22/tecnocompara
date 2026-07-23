@@ -80,5 +80,4 @@ consistente en toda la gama de entrada de cualquier fabricante.
   Ver precio actual del Galaxy A16 →
 </a>
 
-*Nota de mantenimiento: verificar precio, disponibilidad y variantes
-vigentes antes de publicar. Revisar cada 2-3 meses.*
+<!-- Nota de mantenimiento: verificar precio, disponibilidad y variantes vigentes antes de publicar. Revisar cada 2-3 meses. -->

@@ -99,5 +99,4 @@ control de luz, y priorizas el contraste sobre el brillo máximo.
   Ver modelos Samsung QLED →
 </a>
 
-*Nota de mantenimiento: completar con tamaños y precios vigentes de ambas
-marcas antes de publicar. Revisar cada 2-3 meses.*
+<!-- Nota de mantenimiento: completar con tamaños y precios vigentes de ambas marcas antes de publicar. Revisar cada 2-3 meses. -->

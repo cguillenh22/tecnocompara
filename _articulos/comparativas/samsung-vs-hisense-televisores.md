@@ -87,5 +87,4 @@ será principalmente básico (TV por cable, streaming estándar).
   Ver modelos Samsung gama de entrada →
 </a>
 
-*Nota de mantenimiento: completar con modelos y precios vigentes antes de
-publicar. Revisar cada 2-3 meses.*
+<!-- Nota de mantenimiento: completar con modelos y precios vigentes antes de publicar. Revisar cada 2-3 meses. -->

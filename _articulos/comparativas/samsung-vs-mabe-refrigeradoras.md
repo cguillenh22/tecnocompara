@@ -99,5 +99,4 @@ familia grande con el presupuesto más ajustado posible.
   Ver modelos Samsung de alta capacidad →
 </a>
 
-*Nota de mantenimiento: completar con capacidades exactas y precios
-vigentes antes de publicar. Revisar cada 2-3 meses.*
+<!-- Nota de mantenimiento: completar con capacidades exactas y precios vigentes antes de publicar. Revisar cada 2-3 meses. -->

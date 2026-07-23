@@ -117,6 +117,4 @@ favorece a Samsung por soporte y reventa.
   Ver modelos Samsung gama media →
 </a>
 
-*Nota de mantenimiento: esta comparativa usa criterios generales de marca.
-Actualiza con los modelos y precios vigentes antes de publicar, y revisa
-cada 2-3 meses.*
+<!-- Nota de mantenimiento: esta comparativa usa criterios generales de marca. Actualiza con los modelos y precios vigentes antes de publicar, y revisa cada 2-3 meses. -->

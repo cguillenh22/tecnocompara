@@ -108,5 +108,4 @@ el momento de compra que por diferencias funcionales profundas.
   Ver modelos Samsung gama baja →
 </a>
 
-*Nota de mantenimiento: completar con modelos y precios vigentes antes de
-publicar. Revisar cada 2-3 meses.*
+<!-- Nota de mantenimiento: completar con modelos y precios vigentes antes de publicar. Revisar cada 2-3 meses. -->

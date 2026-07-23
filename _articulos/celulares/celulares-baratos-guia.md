@@ -87,5 +87,4 @@ uso que suele acompañar la compra de un celular económico.
   Ver celulares baratos disponibles →
 </a>
 
-*Nota de mantenimiento: completar con modelos y precios vigentes antes de
-publicar. Revisar cada 2-3 meses.*
+<!-- Nota de mantenimiento: completar con modelos y precios vigentes antes de publicar. Revisar cada 2-3 meses. -->

@@ -112,5 +112,4 @@ especificación técnica.
   Ver modelos Samsung Galaxy gama alta →
 </a>
 
-*Nota de mantenimiento: actualizar con los modelos vigentes de ambas marcas
-y precios reales antes de publicar. Revisar cada 2-3 meses.*
+<!-- Nota de mantenimiento: actualizar con los modelos vigentes de ambas marcas y precios reales antes de publicar. Revisar cada 2-3 meses. -->

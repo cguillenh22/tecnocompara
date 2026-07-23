@@ -97,5 +97,4 @@ vives fuera de Lima y priorizas facilidad de servicio técnico local.
   Ver modelos Samsung compactos →
 </a>
 
-*Nota de mantenimiento: completar con modelos, dimensiones y precios
-vigentes antes de publicar. Revisar cada 2-3 meses.*
+<!-- Nota de mantenimiento: completar con modelos, dimensiones y precios vigentes antes de publicar. Revisar cada 2-3 meses. -->
