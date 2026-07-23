@@ -8,55 +8,28 @@ permalink: /sobre-nosotros/
 
 # Sobre Nosotros
 
-TecnoCompara es un sitio independiente de comparativas de electrónica para
-Perú. Nació de un problema muy simple: elegir un celular, una TV o una
-refrigeradora implica comparar demasiadas fichas técnicas distintas,
-escritas para especialistas y no para la persona que solo quiere saber
-qué le conviene comprar sin perder una tarde entera investigando.
-
-No somos una tienda ni un marketplace. No vendemos nada directamente —
-comparamos, explicamos y te dejamos la decisión final a ti, con la
-información que necesitas para tomarla con confianza.
-
-## Qué encontrarás aquí
-
-- **Comparativas directas** entre marcas y modelos específicos, con
-  claridad sobre a quién le conviene cada opción y por qué.
-- **Guías de compra por categoría**, pensadas para quien recién está
-  decidiendo qué buscar, no solo comparando dos productos puntuales.
-- **Guías de mantenimiento**, porque la relación con un producto no
-  termina el día que lo compras.
+TecnoCompara es un sitio independiente de comparativas de electrónica
+para Perú: celulares, TVs y refrigeradoras explicados con criterios de
+uso real, no solo fichas técnicas.
 
 ## Cómo elegimos qué recomendar
 
-Nuestras guías y comparativas se basan en fichas técnicas públicas,
-precios de referencia del mercado peruano y criterios de uso real —
-para qué sirve cada especificación en la práctica del día a día, no
-solo qué significa en teoría. Priorizamos explicaciones que te ayuden a
-decidir tú mismo, no solo veredictos de "esto es lo mejor" sin contexto.
-
-Nuestras comparativas y fichas de precio se revisan periódicamente para
-mantener los datos vigentes. Si encuentras algo desactualizado,
-avísanos — el formulario de abajo llega directo a nuestro equipo.
+Nos basamos en fichas técnicas públicas, precios de referencia del
+mercado peruano y qué tan útil es cada especificación en el día a día.
+Revisamos los datos periódicamente — si encuentras algo desactualizado,
+avísanos.
 
 ## Cómo se financia el sitio
 
-TecnoCompara participa en programas de afiliados. Esto significa que
-algunos enlaces hacia tiendas o marcas —incluidos enlaces hacia
-productos Samsung— son enlaces de afiliado: si compras a través de
-ellos, el sitio puede recibir una comisión, **sin costo adicional para
-ti**.
-
-Esta relación comercial no cambia el criterio editorial: un producto se
-recomienda porque tiene sentido para el caso de uso descrito, no porque
-pague mejor comisión. Cuando una opción más económica o de otra marca es
-la mejor respuesta para ti, es la que vas a leer en el artículo.
+Participamos en programas de afiliados: algunos enlaces —incluidos los
+de Samsung— generan una comisión si compras a través de ellos, sin
+costo extra para ti. Esto no cambia lo que recomendamos: si otra marca
+u opción es la mejor para tu caso, es la que vas a leer.
 
 ## Contacto
 
-¿Encontraste un error, un precio desactualizado, o quieres sugerir una
-comparativa? Escríbenos con el formulario de abajo — leemos todos los
-mensajes.
+¿Error, precio desactualizado, o una comparativa que quieras sugerir?
+Escríbenos abajo.
 
 <form action="https://formspree.io/f/xgogzwag" method="POST" style="margin-top:24px;">
   <div style="margin-bottom:16px;">
