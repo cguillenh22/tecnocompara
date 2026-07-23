@@ -14,7 +14,7 @@ description: "Guías y comparativas independientes de celulares, TVs y refrigera
     </p>
   </section>
 
-  {% assign featured = site.articulos | where_exp: "a", "a.categories contains 'comparativas'" | sample: 1 | first %}
+  {% assign featured = site.articulos | where_exp: "a", "a.categories contains 'comparativas'" | sample: 1 %}
   {% if featured %}
   <a href="{{ featured.url | relative_url }}" class="featured-banner">
     {% assign feat_image = featured.image | default: nil %}
