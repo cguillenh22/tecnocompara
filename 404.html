@@ -22,10 +22,15 @@ permalink: /404.html
         {% assign cat_name = cat[1] %}
         {% assign count = site.articulos | where_exp: "a", "a.categories contains cat_key" | size %}
         {% if count > 0 %}
-        <div class="card">
-          <h3><a href="{{ '/' | append: cat_key | append: '/' | relative_url }}">{{ cat_name }}</a></h3>
-          <div class="meta">{{ count }} artículo{% if count != 1 %}s{% endif %}</div>
-        </div>
+        {% assign cat_img_filename = site.data.category_images[cat_key] | default: nil %}
+        {% unless cat_img_filename %}{% assign cat_img_filename = cat_key | append: ".svg" %}{% endunless %}
+        <a href="{{ '/' | append: cat_key | append: '/' | relative_url }}" class="card" style="text-decoration:none; color:inherit; display:block;">
+          <img class="card__img" src="{{ '/assets/img/categorias/' | append: cat_img_filename | relative_url }}" alt="{{ cat_name }}" loading="lazy">
+          <div class="card__body">
+            <h3>{{ cat_name }}</h3>
+            <div class="meta">{{ count }} artículo{% if count != 1 %}s{% endif %}</div>
+          </div>
+        </a>
         {% endif %}
       {% endfor %}
     </div>
@@ -37,10 +42,7 @@ permalink: /404.html
     <h2>Comparativas populares</h2>
     <div class="card-grid">
       {% for post in destacados %}
-      <div class="card">
-        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <div class="meta">Comparativa</div>
-      </div>
+        {% include post-card.html post=post meta="Comparativa" %}
       {% endfor %}
     </div>
   </section>

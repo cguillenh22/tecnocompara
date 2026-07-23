@@ -4,11 +4,21 @@ permalink: /search.json
 ---
 [
   {% for post in site.articulos %}
+  {% assign idx_image = post.image | default: nil %}
+  {% unless idx_image %}
+    {% assign idx_cat_filename = site.data.category_images[post.categories.first] | default: nil %}
+    {% if idx_cat_filename %}
+      {% assign idx_image = "/assets/img/categorias/" | append: idx_cat_filename %}
+    {% else %}
+      {% assign idx_image = "/assets/img/categorias/" | append: post.categories.first | append: ".svg" %}
+    {% endif %}
+  {% endunless %}
   {
     "title": {{ post.title | jsonify }},
     "description": {{ post.description | default: "" | jsonify }},
     "url": {{ post.url | relative_url | jsonify }},
-    "category": {{ post.categories.first | default: "" | jsonify }}
+    "category": {{ post.categories.first | default: "" | jsonify }},
+    "image": {{ idx_image | relative_url | jsonify }}
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

@@ -82,10 +82,8 @@
         <h2>Contenido relacionado</h2>
         <div class="card-grid">
           {% for post in related limit: 3 %}
-          <div class="card">
-            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <div class="meta">{{ site.data.categories[post.categories.first] | default: post.categories.first }}</div>
-          </div>
+          {% capture card_meta %}{{ site.data.categories[post.categories.first] | default: post.categories.first }}{% endcapture %}
+          {% include post-card.html post=post meta=card_meta %}
           {% endfor %}
         </div>
       </section>

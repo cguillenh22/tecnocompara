@@ -14,6 +14,19 @@ description: "Guías y comparativas independientes de celulares, TVs y refrigera
     </p>
   </section>
 
+  {% assign featured = site.articulos | where_exp: "a", "a.categories contains 'comparativas'" | sample: 1 | first %}
+  {% if featured %}
+  <a href="{{ featured.url | relative_url }}" class="featured-banner">
+    {% assign feat_image = featured.image | default: nil %}
+    <img class="featured-banner__img" src="{{ feat_image | relative_url }}" alt="{{ featured.title }}" loading="lazy">
+    <div class="featured-banner__body">
+      <span class="eyebrow">Comparativa destacada</span>
+      <h2>{{ featured.title }}</h2>
+      <span class="featured-banner__cta">Leer comparativa →</span>
+    </div>
+  </a>
+  {% endif %}
+
   {% for cat in site.data.categories %}
     {% assign cat_key = cat[0] %}
     {% assign cat_name = cat[1] %}
@@ -23,13 +36,7 @@ description: "Guías y comparativas independientes de celulares, TVs y refrigera
       <h2>{{ cat_name }}</h2>
       <div class="card-grid">
         {% for post in posts limit:6 %}
-        <div class="card">
-          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          <div class="meta">
-            {% if post.content_type == 'volatil' %}Actualizable{% else %}Guía{% endif %}
-            · {{ post.read_time | default: 5 }} min
-          </div>
-        </div>
+          {% include post-card.html post=post %}
         {% endfor %}
       </div>
       <p><a href="{{ '/' | append: cat_key | append: '/' | relative_url }}">Ver todo en {{ cat_name | downcase }} →</a></p>

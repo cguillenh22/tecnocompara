@@ -13,13 +13,7 @@ permalink: /teles/
   {% assign posts = site.articulos | where_exp: "a", "a.categories contains 'teles'" %}
   <div class="card-grid">
     {% for post in posts %}
-    <div class="card">
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <div class="meta">
-        {% if post.content_type == 'volatil' %}Actualizable{% else %}Guía{% endif %}
-        · {{ post.read_time | default: 5 }} min
-      </div>
-    </div>
+    {% include post-card.html post=post %}
     {% endfor %}
   </div>
   {% if posts.size == 0 %}

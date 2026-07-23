@@ -1,0 +1,18 @@
+{% assign card_image = include.post.image | default: nil %}
+{% unless card_image %}
+  {% assign card_cat_filename = site.data.category_images[include.post.categories.first] | default: nil %}
+  {% if card_cat_filename %}
+    {% assign card_image = "/assets/img/categorias/" | append: card_cat_filename %}
+  {% else %}
+    {% assign card_image = "/assets/img/categorias/" | append: include.post.categories.first | append: ".svg" %}
+  {% endif %}
+{% endunless %}
+<div class="card">
+  <img class="card__img" src="{{ card_image | relative_url }}" alt="{{ include.post.title }}" loading="lazy">
+  <div class="card__body">
+    <h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
+    <div class="meta">
+      {% if include.meta %}{{ include.meta }}{% else %}{% if include.post.content_type == 'volatil' %}Actualizable{% else %}Guía{% endif %} · {{ include.post.read_time | default: 5 }} min{% endif %}
+    </div>
+  </div>
+</div>

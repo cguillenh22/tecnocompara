@@ -42,8 +42,9 @@ permalink: /buscar/
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
-        '<h3><a href="' + item.url + '">' + item.title + '</a></h3>' +
-        '<div class="meta">' + (item.category || '') + '</div>';
+        '<img class="card__img" src="' + item.image + '" alt="' + item.title + '" loading="lazy">' +
+        '<div class="card__body"><h3><a href="' + item.url + '">' + item.title + '</a></h3>' +
+        '<div class="meta">' + (item.category || '') + '</div></div>';
       resultsEl.appendChild(card);
     });
   }

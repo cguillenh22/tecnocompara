@@ -18,13 +18,8 @@ permalink: /actualizaciones/
   {% assign updated = site.articulos | sort: "date_modified" | reverse %}
   <div class="card-grid">
     {% for post in updated limit: 24 %}
-    <div class="card">
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <div class="meta">
-        {% if post.content_type == 'volatil' %}Actualizable{% else %}Guía{% endif %}
-        · <span class="update-badge">Actualizado {{ post.date_modified | date: "%-d %b %Y" }}</span>
-      </div>
-    </div>
+      {% capture card_meta %}{% if post.content_type == 'volatil' %}Actualizable{% else %}Guía{% endif %} · <span class="update-badge">Actualizado {{ post.date_modified | date: "%-d %b %Y" }}</span>{% endcapture %}
+      {% include post-card.html post=post meta=card_meta %}
     {% endfor %}
   </div>
 </div>
