@@ -26,6 +26,8 @@ Para departamentos pequeños, la decisión entre Samsung e Indurama rara vez
 es sobre "cuál es mejor marca" — es sobre qué combinación de tamaño,
 consumo y precio se ajusta mejor al espacio real disponible.
 
+<div class="nota-callout"><svg class="nota-callout__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><p><strong>Respuesta rápida:</strong> Samsung tiene mejor eficiencia energética y garantía extendida; Indurama gana en precio inicial y servicio técnico fuera de Lima. Si la diferencia de precio es menor al 15-20%, Samsung se justifica a largo plazo.</p></div>
+
 <div class="spec-strip">
   <div class="spec-strip__item">
     <span class="spec-strip__label">Precio de entrada</span>

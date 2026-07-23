@@ -20,7 +20,9 @@ faq:
 
 El consumo eléctrico de una refrigeradora es uno de los más altos entre los
 electrodomésticos del hogar, porque funciona las 24 horas del día, todos
-los días.
+los días. Para calcular el costo real en soles, necesitas también la
+tarifa vigente de tu distribuidora, publicada por
+[OSINERGMIN](https://www.gob.pe/osinergmin).
 
 <div class="spec-strip">
   <div class="spec-strip__item">

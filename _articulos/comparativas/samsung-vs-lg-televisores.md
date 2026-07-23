@@ -26,6 +26,8 @@ La comparación entre Samsung y LG en TVs es, en el fondo, la comparación
 entre dos tecnologías de panel distintas: QLED (Samsung) y OLED (LG). Ninguna
 es objetivamente superior — dependen de cómo y dónde vas a usar la TV.
 
+<div class="nota-callout"><svg class="nota-callout__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><p><strong>Respuesta rápida:</strong> Samsung (QLED) brilla más y es mejor para salas iluminadas; LG (OLED) tiene mejor contraste y es mejor para salas oscuras. Ninguna es superior en general — depende de tu sala.</p></div>
+
 <div class="spec-strip">
   <div class="spec-strip__item">
     <span class="spec-strip__label">Tecnología Samsung</span>

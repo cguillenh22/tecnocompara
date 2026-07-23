@@ -23,6 +23,8 @@ Si la cámara es tu criterio principal de compra, la comparación entre
 Samsung y Xiaomi en gama media se reduce a tres factores: procesamiento,
 consistencia en poca luz y estabilización de video.
 
+<div class="nota-callout"><svg class="nota-callout__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><p><strong>Respuesta rápida:</strong> En gama media, Samsung suele procesar mejor en poca luz; Xiaomi ofrece más resolución nominal. Antes de decidir, compara fotos reales del modelo específico, no solo la ficha técnica.</p></div>
+
 <div class="spec-strip">
   <div class="spec-strip__item">
     <span class="spec-strip__label">Poca luz</span>

@@ -26,6 +26,8 @@ Si tu criterio principal es maximizar capacidad de almacenamiento por cada
 sol invertido, la comparación entre Samsung y Mabe conviene hacerla con una
 métrica simple: costo por litro de capacidad total.
 
+<div class="nota-callout"><svg class="nota-callout__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><p><strong>Respuesta rápida:</strong> Mabe suele tener menor costo por litro de capacidad en modelos grandes; Samsung compensa con tecnología inverter que reduce el consumo eléctrico a largo plazo. Calcula el costo por litro de cada modelo antes de decidir.</p></div>
+
 <div class="spec-strip">
   <div class="spec-strip__item">
     <span class="spec-strip__label">Costo por litro</span>

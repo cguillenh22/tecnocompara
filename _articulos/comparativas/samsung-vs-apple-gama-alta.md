@@ -26,6 +26,8 @@ En gama alta, la pregunta ya no es "cuál es mejor en papel" — ambas marcas
 están en un nivel muy similar de calidad. La decisión real pasa por el
 ecosistema y el estilo de uso.
 
+<div class="nota-callout"><svg class="nota-callout__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><p><strong>Respuesta rápida:</strong> En specs puras, Samsung Galaxy y iPhone están muy parejos en gama alta. Elige Samsung si priorizas personalización, un plegable o el zoom de cámara; elige iPhone si ya usas otros dispositivos Apple o priorizas el valor de reventa.</p></div>
+
 <div class="spec-strip">
   <div class="spec-strip__item">
     <span class="spec-strip__label">Ecosistema</span>

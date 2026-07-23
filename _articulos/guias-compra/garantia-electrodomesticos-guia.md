@@ -83,6 +83,6 @@ precio del equipo, probablemente no.
 1. **Documenta todo por escrito** (correos, mensajes, número de ticket de
    atención) desde el primer contacto.
 2. **Revisa el Libro de Reclamaciones** disponible en toda tienda física o
-   virtual en Perú por normativa de INDECOPI.
-3. **Escala a INDECOPI** si la tienda no resuelve dentro de un plazo
+   virtual en Perú por normativa de [INDECOPI](https://www.gob.pe/indecopi).
+3. **Escala a [INDECOPI](https://www.gob.pe/indecopi)** si la tienda no resuelve dentro de un plazo
    razonable, presentando la documentación reunida.

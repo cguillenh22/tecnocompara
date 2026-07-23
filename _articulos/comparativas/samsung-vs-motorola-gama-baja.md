@@ -26,6 +26,8 @@ La gama baja es donde más se nota la diferencia entre "specs en papel" y
 "experiencia real de uso". Aquí Samsung y Motorola compiten con enfoques
 distintos.
 
+<div class="nota-callout"><svg class="nota-callout__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><p><strong>Respuesta rápida:</strong> Motorola ofrece más rendimiento inmediato por el precio gracias a su interfaz ligera; Samsung da más años de actualizaciones y mejor soporte técnico. Para un primer celular o uso muy básico, ambas cumplen bien.</p></div>
+
 <div class="spec-strip">
   <div class="spec-strip__item">
     <span class="spec-strip__label">Interfaz</span>

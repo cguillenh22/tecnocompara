@@ -26,6 +26,8 @@ Samsung y LG son las dos marcas asiáticas más establecidas en línea blanca
 en Perú, y sus refrigeradoras No Frost compiten directamente en casi todos
 los rangos de precio.
 
+<div class="nota-callout"><svg class="nota-callout__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><p><strong>Respuesta rápida:</strong> Samsung y LG están muy parejas: LG suele operar más silenciosa y ofrece más configuraciones de repisas; Samsung destaca en acabados y Family Hub. La diferencia real está en detalles, no en calidad general.</p></div>
+
 <div class="spec-strip">
   <div class="spec-strip__item">
     <span class="spec-strip__label">Family Hub</span>

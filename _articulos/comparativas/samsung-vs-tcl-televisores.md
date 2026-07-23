@@ -26,6 +26,8 @@ En el rango de 43 a 50 pulgadas es donde más se cruza el presupuesto
 familiar promedio en Perú, y también donde la diferencia de precio entre
 Samsung y TCL es más notoria en términos porcentuales.
 
+<div class="nota-callout"><svg class="nota-callout__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><p><strong>Respuesta rápida:</strong> Samsung procesa mejor la imagen y maneja mejor el movimiento rápido; TCL cuesta notablemente menos en el mismo tamaño. TCL tiene sentido como segunda TV o para streaming casual; Samsung para tu TV principal.</p></div>
+
 <div class="spec-strip">
   <div class="spec-strip__item">
     <span class="spec-strip__label">Precio</span>
