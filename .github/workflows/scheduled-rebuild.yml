@@ -1,0 +1,41 @@
+name: Reconstrucción programada
+
+# Reconstruye el sitio automáticamente todos los días, para que los
+# artículos con fecha futura (programados en el calendario editorial)
+# se publiquen solos apenas llega su fecha, sin necesitar un commit
+# manual ese día. También se reconstruye en cada push a main, para
+# mantener el despliegue inmediato de siempre.
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # 09:00 y 19:00 hora Perú (14:00 y 00:00 UTC) — cubre ambos horarios
+    # de publicación del calendario editorial.
+    - cron: "0 14 * * *"
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - uses: actions/upload-pages-artifact@v3
+      - id: deployment
+        uses: actions/deploy-pages@v4

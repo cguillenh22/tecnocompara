@@ -6,6 +6,13 @@ description: >-
 url: "https://tech.modoahorro.pe"
 lang: es-PE
 
+# --- Publicación programada ---
+# Un artículo con date: en el futuro no aparece en el sitio hasta esa
+# fecha (comportamiento por defecto de Jekyll, explícito aquí a
+# propósito). Necesario para el calendario editorial de 2 artículos/día.
+future: false
+timezone: America/Lima
+
 # --- Awin / afiliados ---
 # Reemplaza cuando tengas el advertiser de Samsung aprobado en Awin.
 awin_disclosure: true
