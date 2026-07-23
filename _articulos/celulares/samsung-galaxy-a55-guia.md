@@ -3,6 +3,7 @@ title: "Samsung Galaxy A55: ficha y guía de compra"
 seo_title: "Samsung Galaxy A55: guía completa de compra | TecnoCompara"
 description: "Guía de compra del Samsung Galaxy A55: a quién le conviene, qué esperar de su gama y qué revisar antes de comprarlo en Perú."
 categories: [celulares]
+image: "/assets/img/articulos/marcas/samsung-galaxy-a55.svg"
 content_type: "volatil"
 read_time: 7
 date: 2026-07-21

@@ -3,6 +3,7 @@ title: "Celulares Honor: guía y gama completa"
 seo_title: "Celulares Honor: guía completa de gama | TecnoCompara"
 description: "Guía completa de celulares Honor en Perú: qué ofrece la marca, sus gamas principales y a quién le conviene."
 categories: [celulares]
+image: "/assets/img/articulos/marcas/honor-celulares.svg"
 content_type: "evergreen"
 read_time: 6
 date: 2026-07-21

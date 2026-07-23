@@ -301,7 +301,6 @@ p { margin: 0 0 1.1em; }
 @media (min-width: 900px) {
   .article-layout {
     grid-template-columns: 1fr 280px;
-    align-items: start;
   }
 }
 

@@ -3,6 +3,7 @@ title: "Refrigeradoras Samsung: catálogo y guía"
 seo_title: "Refrigeradoras Samsung: guía completa | TecnoCompara"
 description: "Guía completa del catálogo de refrigeradoras Samsung en Perú: líneas, tecnología inverter y Family Hub explicadas."
 categories: [refrigeradoras]
+image: "/assets/img/articulos/marcas/samsung-refrigeradoras.svg"
 content_type: "evergreen"
 read_time: 7
 date: 2026-07-21

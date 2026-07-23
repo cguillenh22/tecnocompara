@@ -3,6 +3,7 @@ title: "Samsung Galaxy A16: ficha y guía de compra"
 seo_title: "Samsung Galaxy A16: guía completa de compra | TecnoCompara"
 description: "Guía de compra del Samsung Galaxy A16: a quién le conviene, qué esperar de su gama y qué revisar antes de comprarlo en Perú."
 categories: [celulares]
+image: "/assets/img/articulos/marcas/samsung-galaxy-a16.svg"
 content_type: "volatil"
 read_time: 6
 date: 2026-07-21

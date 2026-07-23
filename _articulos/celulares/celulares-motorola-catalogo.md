@@ -3,6 +3,7 @@ title: "Celulares Motorola: guía y gama completa"
 seo_title: "Celulares Motorola: guía completa de gama | TecnoCompara"
 description: "Guía completa de celulares Motorola en Perú: línea G, Edge y Razr explicadas, y cómo elegir según tu presupuesto."
 categories: [celulares]
+image: "/assets/img/articulos/marcas/motorola-celulares.svg"
 content_type: "evergreen"
 read_time: 7
 date: 2026-07-21

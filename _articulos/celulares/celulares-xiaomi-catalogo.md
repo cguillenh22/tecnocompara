@@ -3,6 +3,7 @@ title: "Celulares Xiaomi: guía y gama completa"
 seo_title: "Celulares Xiaomi: guía completa de gama | TecnoCompara"
 description: "Guía completa de celulares Xiaomi en Perú: líneas Redmi, Redmi Note y POCO explicadas, y cómo elegir según tu presupuesto."
 categories: [celulares]
+image: "/assets/img/articulos/marcas/xiaomi-celulares.svg"
 content_type: "evergreen"
 read_time: 7
 date: 2026-07-21

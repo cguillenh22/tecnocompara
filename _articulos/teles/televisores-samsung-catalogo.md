@@ -3,6 +3,7 @@ title: "Smart TV Samsung: guía completa"
 seo_title: "Smart TV Samsung: guía completa de catálogo | TecnoCompara"
 description: "Guía completa del catálogo de Smart TV Samsung en Perú: líneas QLED, Neo QLED y Crystal UHD explicadas."
 categories: [teles]
+image: "/assets/img/articulos/marcas/samsung-televisores.svg"
 content_type: "evergreen"
 read_time: 8
 date: 2026-07-21

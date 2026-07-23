@@ -3,6 +3,7 @@ title: "Celulares Samsung: catálogo y guía de gama completa"
 seo_title: "Celulares Samsung: guía completa por gama | TecnoCompara"
 description: "Guía completa de celulares Samsung en Perú: líneas Galaxy A, S y Z explicadas, y cómo elegir según tu presupuesto."
 categories: [celulares]
+image: "/assets/img/articulos/marcas/samsung-celulares.svg"
 content_type: "evergreen"
 read_time: 8
 date: 2026-07-21
