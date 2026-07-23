@@ -4,7 +4,7 @@ title: "Sobre Nosotros"
 description: "Quiénes hacemos TecnoCompara y cómo se financia el sitio."
 permalink: /sobre-nosotros/
 ---
-<div class="container article-body" style="max-width:720px; padding-top:32px;">
+<div class="container article-body" style="max-width:720px; padding-top:32px;" markdown="1">
 
 # Sobre Nosotros
 

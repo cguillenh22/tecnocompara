@@ -4,7 +4,7 @@ title: "Contacto"
 description: "Escríbenos si encontraste un error, tienes una sugerencia o quieres reportar un enlace roto."
 permalink: /contacto/
 ---
-<div class="container article-body" style="max-width:640px; padding-top:32px;">
+<div class="container article-body" style="max-width:640px; padding-top:32px;" markdown="1">
 
 # Contacto
 
