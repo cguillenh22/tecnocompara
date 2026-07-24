@@ -47,7 +47,13 @@
         {% assign cat_list = site.data.category_images[page.categories.first] %}
         {% if cat_list %}
           {% assign cat_count = cat_list | size %}
-          {% assign seed = page.url | size %}
+          {% assign cat_siblings = site.articulos | where_exp: "a", "a.categories.first == page.categories.first" | sort: "url" %}
+          {% assign seed = 0 %}
+          {% for sibling in cat_siblings %}
+            {% if sibling.url == page.url %}
+              {% assign seed = forloop.index0 %}
+            {% endif %}
+          {% endfor %}
           {% assign idx = seed | modulo: cat_count %}
           {% assign cat_filename = cat_list[idx] %}
           {% assign featured_image = "/assets/img/categorias/" | append: cat_filename %}

@@ -9,7 +9,13 @@ permalink: /search.json
     {% assign idx_cat_list = site.data.category_images[post.categories.first] %}
     {% if idx_cat_list %}
       {% assign idx_cat_count = idx_cat_list | size %}
-      {% assign idx_seed = post.url | size %}
+      {% assign idx_siblings = site.articulos | where_exp: "a", "a.categories.first == post.categories.first" | sort: "url" %}
+      {% assign idx_seed = 0 %}
+      {% for sibling in idx_siblings %}
+        {% if sibling.url == post.url %}
+          {% assign idx_seed = forloop.index0 %}
+        {% endif %}
+      {% endfor %}
       {% assign idx_pos = idx_seed | modulo: idx_cat_count %}
       {% assign idx_cat_filename = idx_cat_list[idx_pos] %}
       {% assign idx_image = "/assets/img/categorias/" | append: idx_cat_filename %}

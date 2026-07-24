@@ -3,7 +3,13 @@
   {% assign card_cat_list = site.data.category_images[include.post.categories.first] %}
   {% if card_cat_list %}
     {% assign card_cat_count = card_cat_list | size %}
-    {% assign card_seed = include.post.url | size %}
+    {% assign card_siblings = site.articulos | where_exp: "a", "a.categories.first == include.post.categories.first" | sort: "url" %}
+    {% assign card_seed = 0 %}
+    {% for sibling in card_siblings %}
+      {% if sibling.url == include.post.url %}
+        {% assign card_seed = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
     {% assign card_idx = card_seed | modulo: card_cat_count %}
     {% assign card_cat_filename = card_cat_list[card_idx] %}
     {% assign card_image = "/assets/img/categorias/" | append: card_cat_filename %}

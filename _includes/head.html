@@ -24,7 +24,13 @@
     {% assign og_cat_list = site.data.category_images[page.categories.first] %}
     {% if og_cat_list %}
       {% assign og_cat_count = og_cat_list | size %}
-      {% assign og_seed = page.url | size %}
+      {% assign og_siblings = site.articulos | where_exp: "a", "a.categories.first == page.categories.first" | sort: "url" %}
+      {% assign og_seed = 0 %}
+      {% for sibling in og_siblings %}
+        {% if sibling.url == page.url %}
+          {% assign og_seed = forloop.index0 %}
+        {% endif %}
+      {% endfor %}
       {% assign og_idx = og_seed | modulo: og_cat_count %}
       {% assign og_cat_filename = og_cat_list[og_idx] %}
       {% assign og_image = "/assets/img/categorias/" | append: og_cat_filename %}
