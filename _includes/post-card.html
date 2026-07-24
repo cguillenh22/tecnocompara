@@ -1,7 +1,11 @@
 {% assign card_image = include.post.image | default: nil %}
 {% unless card_image %}
-  {% assign card_cat_filename = site.data.category_images[include.post.categories.first] | default: nil %}
-  {% if card_cat_filename %}
+  {% assign card_cat_list = site.data.category_images[include.post.categories.first] %}
+  {% if card_cat_list %}
+    {% assign card_cat_count = card_cat_list | size %}
+    {% assign card_seed = include.post.url | size %}
+    {% assign card_idx = card_seed | modulo: card_cat_count %}
+    {% assign card_cat_filename = card_cat_list[card_idx] %}
     {% assign card_image = "/assets/img/categorias/" | append: card_cat_filename %}
   {% else %}
     {% assign card_image = "/assets/img/categorias/" | append: include.post.categories.first | append: ".svg" %}

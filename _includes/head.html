@@ -21,8 +21,12 @@
 {% if page.layout == 'articulo' %}
   {% assign og_image = page.image | default: nil %}
   {% unless og_image %}
-    {% assign og_cat_filename = site.data.category_images[page.categories.first] | default: nil %}
-    {% if og_cat_filename %}
+    {% assign og_cat_list = site.data.category_images[page.categories.first] %}
+    {% if og_cat_list %}
+      {% assign og_cat_count = og_cat_list | size %}
+      {% assign og_seed = page.url | size %}
+      {% assign og_idx = og_seed | modulo: og_cat_count %}
+      {% assign og_cat_filename = og_cat_list[og_idx] %}
       {% assign og_image = "/assets/img/categorias/" | append: og_cat_filename %}
     {% else %}
       {% assign og_image = "/assets/img/categorias/" | append: page.categories.first | append: ".svg" %}

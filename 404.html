@@ -22,8 +22,12 @@ permalink: /404.html
         {% assign cat_name = cat[1] %}
         {% assign count = site.articulos | where_exp: "a", "a.categories contains cat_key" | size %}
         {% if count > 0 %}
-        {% assign cat_img_filename = site.data.category_images[cat_key] | default: nil %}
-        {% unless cat_img_filename %}{% assign cat_img_filename = cat_key | append: ".svg" %}{% endunless %}
+        {% assign cat_img_list = site.data.category_images[cat_key] %}
+        {% if cat_img_list %}
+          {% assign cat_img_filename = cat_img_list[0] %}
+        {% else %}
+          {% assign cat_img_filename = cat_key | append: ".svg" %}
+        {% endif %}
         <a href="{{ '/' | append: cat_key | append: '/' | relative_url }}" class="card" style="text-decoration:none; color:inherit; display:block;">
           <img class="card__img" src="{{ '/assets/img/categorias/' | append: cat_img_filename | relative_url }}" alt="{{ cat_name }}" loading="lazy">
           <div class="card__body">

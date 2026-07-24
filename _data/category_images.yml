@@ -1,6 +1,6 @@
-celulares: "celulares.jpg"
-teles: "teles.jpg"
-refrigeradoras: "refrigeradoras.jpg"
-guias-compra: "guias-compra.jpg"
-mantenimiento: "mantenimiento.jpg"
-comparativas: "comparativas.svg"
+celulares: ["celulares.jpg", "celulares-2.jpg", "celulares-3.jpg"]
+teles: ["teles.jpg", "teles-2.jpg", "teles-3.jpg"]
+refrigeradoras: ["refrigeradoras.jpg", "refrigeradoras-2.jpg", "refrigeradoras-3.jpg"]
+guias-compra: ["guias-compra.jpg", "guias-compra-2.jpg"]
+mantenimiento: ["mantenimiento.jpg", "mantenimiento-2.jpg", "mantenimiento-3.jpg"]
+comparativas: ["comparativas.svg"]
